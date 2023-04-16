@@ -1,0 +1,692 @@
+@mixin displaybox {
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin dimension {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+// <!-- ------------header--------------->
+.main_header {
+    border: 0px solid green;
+    width: 80%;
+    margin: 1.5rem auto;
+    background-color: whitesmoke;
+    .nav_item {
+        border: 0px solid rgb(30, 0, 255);
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .logo_img {
+        border: 0px solid yellow;
+        margin: auto;
+
+        text-align: center;
+        margin-top: 1.5rem;
+        left: 35rem;
+        width: 10.25rem;
+        height: 2.5rem;
+    }
+    .nav_link {
+        border: 0px solid blue;
+        margin-top: 2rem;
+        left: 249px;
+        width: 782px;
+        text-align: center;
+        opacity: 1;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .nav_link_item {
+        border: 0px solid cyan;
+        display: flex;
+        justify-content: space-evenly;
+        width: 49rem;
+        margin: auto;
+        font-family: normal normal 600 19px/26px Segoe UI;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+// <----------topsection-------->
+.top_section {
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    height: auto;
+
+    display: flex;
+    font-family: normal normal normal 18px/24px Nunito Sans;
+    justify-content: space-between;
+
+    .card_section {
+        border: 0px solid rgb(51, 255, 0);
+        width: 38.8rem;
+        height: 32.3;
+        .card-details {
+            border: 0px solid rgba(76, 10, 229, 0.881);
+            width: 38.8rem;
+            height: auto;
+            padding: 1.5rem;
+            .card-titles {
+                text-align: left;
+                font-family: normal normal 900 40px/54px Nunito Sans;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin-top: 4rem;
+            }
+            .card-texts {
+                font-family: normal normal normal 18px/24px Nunito Sans;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin-top: 2rem;
+            }
+            .btn {
+                width: 247px;
+                height: 65px;
+                /* UI Properties */
+                background: #1492e6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 33px;
+
+                font-family: normal normal 600 23px/31px Nunito Sans;
+                letter-spacing: 0px;
+                color: #ffffff;
+                opacity: 1;
+                margin-top: 2rem;
+
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .top_section_image {
+        border: 0px solid black;
+        width: 600px;
+        height: 32rem;
+
+        img {
+            width: 100%;
+            height: 28.5rem;
+            border: 0px solid red;
+            text-align: right;
+            align-items: flex-end;
+        }
+    }
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+
+    opacity: 1;
+}
+
+// <----------midsection1-------->
+.mid_section {
+    @include displaybox;
+    @include dimension;
+    border: 0px solid black;
+
+    padding: 2rem;
+    margin-top: 4rem;
+
+    .mid_section_card {
+        width: 19rem;
+        padding: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: auto;
+        border-radius: 19px;
+        h6 {
+            text-align: center;
+            font-family: normal normal bold 18px/24px Nunito Sans;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+    }
+}
+
+.lorem_text {
+    @include dimension;
+    height: 10.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+// <----------midsection2-------->
+.mid_section2 {
+    @include displaybox;
+    @include dimension;
+    margin-bottom: 2rem;
+
+    border: 0px solid yellow;
+    .card_div {
+        border: 0px solid green;
+        padding: 1rem;
+        img {
+            width: 50%;
+            border: 0px solid red;
+            margin-left: 0.9rem;
+        }
+        p {
+            font-family: normal normal normal 18px/24px Nunito Sans;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+    }
+}
+
+//  <----------------mideSection3------------>
+.section_div {
+    border: 0px solid pink;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 1rem;
+    .main_card_div1 {
+        border: 0px solid yellowgreen;
+        width: 55%;
+        margin-top: 0.8rem;
+        padding: 1rem;
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+            h4 {
+                margin-top: 0.8rem;
+            }
+        }
+        .details_div {
+            border: 0px solid rgb(50, 78, 205);
+            width: 95%;
+            margin-top: 0.8rem;
+            text-align: left;
+            font-family: normal normal normal 21px/28px Nunito Sans;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .btn {
+            width: 247px;
+            height: 65px;
+            /* UI Properties */
+            background: #1492e6 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 33px;
+            opacity: 1;
+            margin-top: 2rem;
+            color: #ffffff;
+            padding-top: 1rem;
+        }
+    }
+    .main_card_div2 {
+        border: 0px solid rgb(50, 195, 205);
+        width: 50%;
+        padding: 1rem;
+        margin-left: 38rem;
+        margin-top: 0.5rem;
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+            h4 {
+                margin-top: 0.8rem;
+            }
+        }
+        .details_div {
+            border: 0px solid rgb(50, 78, 205);
+            width: 100%;
+            margin-top: 0.8rem;
+
+            text-align: left;
+            font-family: normal normal normal 21px/28px Nunito Sans;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .btn {
+            width: 247px;
+            height: 65px;
+            /* UI Properties */
+            background: #1492e6 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 33px;
+            opacity: 1;
+            margin-top: 2rem;
+            color: #ffffff;
+            padding-top: 1rem;
+        }
+    }
+}
+
+// <!-- <-----bottom section here----->
+.bottom_section {
+    border: 0px solid green;
+
+    margin: auto;
+    height: 65vh;
+    position: relative;
+    border-radius: 42px;
+    opacity: 1;
+    margin-bottom: 15rem;
+    width: 80%;
+    background: #f8fafc 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    z-index: 0;
+    padding: 1rem;
+
+    .star {
+        @include displaybox;
+
+        border: 0px solid green;
+        width: 40%;
+        h3 {
+            margin-top: 0.7rem;
+        }
+    }
+    .bottom_card_div {
+        @include displaybox;
+        border: 0px solid rgb(50, 84, 205);
+        position: absolute;
+        top: 120px;
+        left: 7%;
+        width: 90%;
+
+        height: auto;
+        background: none;
+        margin: auto;
+        z-index: 3;
+        .complete_card {
+            border: 0px solid teal;
+            box-shadow: 0px 16px 48px #00000029;
+            border-radius: 30px;
+            width: 28%;
+            font-family: normal normal normal 13px/18px Nunito Sans;
+            height: auto;
+            padding: 1rem;
+            z-index: 1000;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            box-shadow: 0px 16px 48px #00000029;
+            border-radius: 30px;
+            opacity: 1;
+            overflow: hidden;
+            margin-top: 1rem;
+            .bottom_card {
+                border: 0px solid rgb(255, 0, 132);
+                width: 100%;
+                padding: 0.1rem;
+                display: flex;
+                justify-content: space-between;
+
+                .img_3 {
+                    border: 0px solid green;
+                    width: 75%;
+
+                    padding: 0.3rem;
+
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+                img {
+                    margin-right: 0.1rem;
+                    border: 0px solid yellow;
+                    width: 20%;
+                    height: 100%;
+                }
+            }
+            .star_div {
+                border: 0px solid green;
+                width: 45%;
+                height: 20px;
+            }
+            .bottom_card_details {
+                width: 100%;
+                border: 0px solid blue;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+// <----------------seceond_last_part--------->
+.second_last_div {
+    border: 0px solid blue;
+    width: 80%;
+    @include displaybox;
+
+    margin: auto;
+    height: 10rem;
+    margin-bottom: 12rem;
+    .card_div {
+        border: 0px solid saddlebrown;
+        width: 25%;
+        font-family: normal normal bold 18px/24px Nunito Sans;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        padding: 10px;
+
+        div {
+            margin-top: 10px;
+            color: #000000;
+            font-weight: bold;
+        }
+    }
+}
+// <-----------------footer section---------->
+footer {
+    border: 1px solid white;
+    width: 80%;
+    height: 369px;
+    margin: auto;
+    background-color: #000000;
+    margin-bottom: 15rem;
+    text-align: center;
+    font-family: normal normal bold 18px/24px Nunito Sans;
+    color: #ffffff;
+    align-items: end;
+    p {
+        margin-top: 300px;
+    }
+}
+
+// ------------for_Mobile_screen----------
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .logo_img {
+        border: 2px solid yellow;
+        margin: auto;
+        display: none;
+        text-align: center;
+        margin-top: 1.5rem;
+        left: 35rem;
+        width: 10.25rem;
+        height: 2.5rem;
+    }
+    .top_section {
+        border: 2px solid green;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
+        height: auto;
+
+        display: block;
+        font-family: normal normal normal 18px/24px Nunito Sans;
+
+        .card_section {
+            border: 2px solid rgb(51, 255, 0);
+            width: 100%;
+            height: 32.3;
+            .card-details {
+                border: 1px solid rgba(76, 10, 229, 0.881);
+                width: 100%;
+                height: auto;
+                padding: 1.5rem;
+                .card-titles {
+                    text-align: left;
+                    font-family: normal normal 900 40px/54px Nunito Sans;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    width: 100%;
+                    margin-top: 4rem;
+                }
+                .card-texts {
+                    font-family: normal normal normal 18px/24px Nunito Sans;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    margin-top: 2rem;
+                    width: 100%;
+                }
+                .btn {
+                    width: 247px;
+                    height: 65px;
+                    /* UI Properties */
+                    background: #1492e6 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 33px;
+
+                    font-family: normal normal 600 23px/31px Nunito Sans;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    opacity: 1;
+                    margin-top: 2rem;
+
+                    padding-top: 1rem;
+                }
+            }
+        }
+
+        .top_section_image {
+            border: 2px solid black;
+            width: 100%;
+            margin-top: 1rem;
+            height: 32rem;
+
+            img {
+                width: 100%;
+                height: 28.5rem;
+                border: 0px solid red;
+                text-align: right;
+                align-items: flex-end;
+            }
+        }
+        .lorem_heading {
+            width: 100%;
+            border: 2px solid red;
+        }
+    }
+    .lorem_text {
+        height: 10.5rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .mid_section {
+        display: block;
+
+        border: 2px solid rgb(18, 191, 200);
+
+        padding: 2rem;
+        margin-top: 4rem;
+
+        .mid_section_card {
+            width: 19rem;
+            padding: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: auto;
+            border-radius: 19px;
+            h6 {
+                text-align: center;
+                font-family: normal normal bold 18px/24px Nunito Sans;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+            }
+        }
+    }
+    .section_div {
+        border: 2px solid pink;
+        width: 90%;
+        margin: auto;
+        height: auto;
+        padding: 1rem;
+        .main_card_div1 {
+            border: 0px solid yellowgreen;
+            width: 100%;
+            margin-top: 0.8rem;
+            padding: 1rem;
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 45%;
+                h4 {
+                    margin-top: 0.8rem;
+                }
+            }
+            .details_div {
+                border: 0px solid rgb(50, 78, 205);
+                width: 100%;
+                margin-top: 0.8rem;
+                text-align: left;
+                font-family: normal normal normal 21px/28px Nunito Sans;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+            }
+            .btn {
+                width: 247px;
+                height: 65px;
+                /* UI Properties */
+                background: #1492e6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 33px;
+                opacity: 1;
+                margin-top: 2rem;
+                color: #ffffff;
+                padding-top: 1rem;
+            }
+        }
+        .main_card_div2 {
+            border: 0px solid rgb(50, 195, 205);
+            width: 100%;
+            padding: 1rem;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 45%;
+                h4 {
+                    margin-top: 0.8rem;
+                }
+            }
+            .details_div {
+                border: 0px solid rgb(50, 78, 205);
+                width: 100%;
+                margin-top: 0.8rem;
+
+                text-align: left;
+                font-family: normal normal normal 21px/28px Nunito Sans;
+                letter-spacing: 0px;
+                color: #000000;
+            }
+            .btn {
+                width: 247px;
+                height: 65px;
+                /* UI Properties */
+                background: #1492e6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 33px;
+                opacity: 1;
+                margin-top: 2rem;
+                color: #ffffff;
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .bottom_section {
+        border: 0px solid green;
+
+        margin: auto;
+        height: 65vh;
+        position: relative;
+        border-radius: 42px;
+        opacity: 1;
+        margin-bottom: 15rem;
+        width: 80%;
+        background: #f8fafc 0% 0% no-repeat padding-box;
+        box-shadow: 0px 16px 48px #00000029;
+        z-index: 0;
+        padding: 1rem;
+
+        .star {
+            @include displaybox;
+
+            border: 0px solid green;
+            width: 100%;
+            h3 {
+                margin-top: 0.7rem;
+            }
+        }
+        .bottom_card_div {
+            display: block;
+            border: 0px solid rgb(50, 84, 205);
+
+            width: 100%;
+
+            height: auto;
+            background: none;
+            margin: auto;
+            z-index: 3;
+            .complete_card {
+                border: 2px solid teal;
+                box-shadow: 0px 16px 48px #00000029;
+                border-radius: 30px;
+                width: 28%;
+                font-family: normal normal normal 13px/18px Nunito Sans;
+                height: auto;
+                padding: 1rem;
+                z-index: 1000;
+                background: #ffffff 0% 0% no-repeat padding-box;
+                box-shadow: 0px 16px 48px #00000029;
+                border-radius: 30px;
+                opacity: 1;
+                overflow: hidden;
+                margin-top: 1rem;
+                .bottom_card {
+                    border: 0px solid rgb(255, 0, 132);
+                    width: 100%;
+                    padding: 0.1rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .img_3 {
+                        border: 0px solid green;
+                        width: 75%;
+
+                        padding: 0.3rem;
+
+                        div {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                    img {
+                        margin-right: 0.1rem;
+                        border: 0px solid yellow;
+                        width: 20%;
+                        height: 100%;
+                    }
+                }
+                .star_div {
+                    border: 0px solid green;
+                    width: 45%;
+                    height: 20px;
+                }
+                .bottom_card_details {
+                    width: 100%;
+                    border: 0px solid blue;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
