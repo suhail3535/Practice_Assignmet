@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                border: 1px silid red;
+                width: 100%;
+
+            }
+            table {
+                border: 1px solid green;
+            }
+            .formdiv {
+                width: 50%;
+                border: 1px solid yellow;
+                padding: 30px;
+                margin: auto;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div class="navbar">
+<div>
+<a href="./index.html">Leave Request Page</a>
+
+</div>
+<div>
+
+<a href="./dashboard.html">Dashboard Page</a>
+</div>
+<div>
+
+    <a href="./status.html">Status Page </a>
+</div>
+
+    </div>
+        <h1>Masai Leave Portal</h1>
+        <div class="container">
+
+            <div class="formdiv">
+                <form>
+                    <label>UniqueIds</label>
+                    <input
+                        type="text"
+                        id="uniqueid"
+                        placeholder="uniqueid" /><br /><br />
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="name" /><br />
+                    <label>reason</label>
+                    <textarea id="textarea"></textarea><br />
+                    <label>Desiganation</label><br />
+                    <label>students</label>
+                    <input
+                        type="radio"
+                        id="student"
+                        placeholder="students"
+                        name="designation"
+                        value="student"
+                        required /><br />
+                    <label>employee</label>
+                    <input
+                        type="radio"
+                        id="employee"
+                        placeholder="employee"
+                        name="designation"
+                        value="employee"
+                        required /><br />
+                    <label for="">Date-start</label>
+                    <input
+                        type="date"
+                        id="Datestart"
+                        name="date"
+                        min=""
+                        placeholder="date"
+                        required /><br /><br />
+                    <label for="">Date-end</label>
+                    <input
+                        type="date"
+                        id="Dateend"
+                        placeholder="date"
+                        name="date"
+                        min=""
+                    
+                        required /><br /><br />
+                    <select id="select">
+                        <option value="">Select</option>
+                        <option value="EC">EC</option>
+                        <option value="HR">HR</option>
+                        <option value="Manager">Manager</option>
+                    </select><br /><br />
+                    <input type="submit" value="Apply Button" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="./script/index.js"></script>

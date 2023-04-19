@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+    </head>
+    <body>
+        <div style="border:1px solid goldenrod; width:500px">
+            <form id="leave-form">
+                <label for="unique-id">Unique ID:</label>
+                <input type="text" id="unique-id" name="unique-id" required />
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    minlength="4"
+                    required />
+
+                <label for="reason">Reason for leave:</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <label>Designation:</label>
+                <label for="employee">Employee</label>
+                <input
+                    type="radio"
+                    id="employee"
+                    name="designation"
+                    value="employee"
+                    required />
+
+                <label for="student">Student</label>
+                <input
+                    type="radio"
+                    id="student"
+                    name="designation"
+                    value="student"
+                    required />
+
+                <label for="start-date">Leave Start Date:</label>
+                <input
+                    type="date"
+                    id="start-date"
+                    name="start-date"
+                    min="<?php echo date('Y-m-d'); ?>"
+                    required />
+
+                <label for="end-date">Leave End Date:</label>
+                <input
+                    type="date"
+                    id="end-date"
+                    name="end-date"
+                    min="<?php echo date('Y-m-d'); ?>"
+                    required />
+
+                <label for="overseer">Overseer:</label>
+                <select id="overseer" name="overseer" required>
+                    <option value="">Select</option>
+                    <option value="EC">EC</option>
+                    <option value="HR">HR</option>
+                    <option value="Manager">Manager</option>
+                </select>
+
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+    </body>
+</html>
+<script>
+
+
+  const leaveForm = document.getElementById("leave-form");
+
+  leaveForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const uniqueId = document.getElementById("unique-id").value;
+    const name = document.getElementById("name").value;
+    const reason = document.getElementById("reason").value;
+    const designation = document.querySelector('input[name="designation"]:checked').value;
+    const startDate = document.getElementById("start-date").value;
+    const endDate = document.getElementById("end-date").value;
+    const overseer = document.getElementById("overseer").value;
+
+    // Validate Unique ID
+    const ids = JSON.parse(localStorage.getItem("leaveIds")) || [];
+    if (ids.includes(uniqueId)) {
+      alert("Duplicate ID is not allowed.");
+      return;
+    }
+
+    // Validate Name
+    if (name.length < 4) {
+      alert("Name should be at least 4 characters.");
+      return;
+    }
+
+    // Validate Reason for Leave
+    if (reason.trim().length === 0) {
+      alert("Reason for leave is required.");
+      return;
+    }
+
+    // Store Data in LocalStorage
+    const leaveData = {
+      uniqueId,
+      name,
+      reason,
+      designation,
+      startDate,
+      endDate,
+      overseer
+    };
+    // localStorage.setItem(uniqueId, JSON.stringify(leaveData));
+    // ids.push(uniqueId);
+    localStorage.setItem("leaveIds", JSON.stringify(leaveData));
+
+    alert("Leave application submitted successfully.");
+    leaveForm.reset();
+  });
+</script>
+ -->
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Task Type</th>
+                    <th>Completion Date</th>
+                    <th>Priority</th>
+                    <th>Mark As Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Append the elements here using JS and DOM  -->
+            </tbody>
+        </table>
+    </body>
+</html>
+<script>
+    // Write all the JS Code related to Home Page Here

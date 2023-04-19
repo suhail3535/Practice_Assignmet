@@ -1,0 +1,22 @@
+.card_body {
+    border: 0px solid green;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card_body div {
+    border: 0px solid black;
+
+    width: 80%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card_body>div img {
+    border: 0px solid red;
+    width: 100%;
+}

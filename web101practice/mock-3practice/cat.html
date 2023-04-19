@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cat page</title>
+        <style>
+            .navbar {
+                border: 0px solid red;
+                width: 90%;
+                margin: 50px auto;
+                height: 60px;
+                background-color: cadetblue;
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+            }
+            a {
+                text-decoration: none;
+                color: aliceblue;
+            }
+            #container {
+                border: 0px solid green;
+                width: 90%;
+                margin: auto;
+                padding: 20px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+            #container div {
+                border: 0px solid black;
+
+                padding: 20px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            #container > div img {
+                border: 0px solid red;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="./index.html"><div>HomePage</div></a>
+            <a href="./cat.html"><div>Cat Page</div></a>
+            <a href="./fav.html"><div>Favurite Page</div></a>
+        </div>
+        <h1 style="text-align: center;">Cats page</h1>
+        <div id="container"></div>
+    </body>
+</html>
+
+<script>
+    let bag = [];
+    let data = JSON.parse(localStorage.getItem("id")) || "";
+    console.log(data, "id............");
+    const url = `https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=${data}&api_key=live_5KCYIKQthpZYxjymsBcnmhyGcm2BuUC0FRcsR7o6E9klD2NQ8TUdZo6FYv3l0Bth`;
+
+    // const api_key ="live_5KCYIKQthpZYxjymsBcnmhyGcm2BuUC0FRcsR7o6E9klD2NQ8TUdZo6FYv3l0Bth";
+
+
+    fetch(url).then((response) => {
+            return response.json();
+            console.log("response", response);
+        })
+        .then((data) => {
+            bag = data;
+            console.log("fetchdata", data);
+
+            displayData(data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+    function displayData(data) {
+        document.querySelector("#container").innerHTML = "";
+
+        data.forEach(function (ele) {
+            let div = document.createElement("div");
+            let image = document.createElement("img");
+            image.setAttribute("src", ele.url);
+            let categaory = document.createElement("h5");
+            categaory.innerText = "category:  " + ele.breeds[0].id;
+
+            let btn = document.createElement("button");
+            (btn.style.backgroundColor = "rgb(141,106,231)"),
+                (btn.style.color = "white");
+            btn.innerText = "Add to Fav";
+            btn.addEventListener("click",function(){
+                addData("fav",ele)
+                alert("added to fav")
+            })
+
+
+            div.append(image, categaory, btn);
+            document.querySelector("#container").append(div);
+        });
+    }
+
+function addData(key,value){
+    let newData=JSON.parse(localStorage.getItem(key))||[];
+    newData.push(value);
+    localStorage.setItem(key,JSON.stringify(newData))
+}
+
+
+
+</script>

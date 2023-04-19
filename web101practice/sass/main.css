@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: red;
+  align-items: center;
+  text-align: center;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  background: yellow;
+}
+.main_header .student {
+  width: 20%;
+  background-color: aqua;
+  height: 20vh;
+  margin: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.main_header .teacher {
+  width: 20%;
+  background-color: aqua;
+  height: 20vh;
+  margin: 2rem;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+}/*# sourceMappingURL=main.css.map */

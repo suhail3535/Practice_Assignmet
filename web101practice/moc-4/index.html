@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 40%;
+            margin: 30px auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px 30px;
+        text-align: center;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+<form>
+  <label for="car-brand">Brand of car:</label><br><br>
+  <select id="brand" name="car-brand">
+    <option value="select">select</option>
+    <option value="Toyota">Toyota</option>
+    <option value="Honda">Honda</option>
+    <option value="Ford">Ford</option>
+    <option value="Chevrolet">Chevrolet</option>
+  </select><br><br>
+
+  <label for="transmission">Manual or Automated:</label><br><br>
+  <select id="transmission" name="transmission">
+    <option value="select">select</option>
+
+    <option value="Manual">Manual</option>
+    <option value="Automated">Automated</option>
+  </select><br><br>
+
+  <label for="year-purchase">Year of purchase:</label><br><br>
+  <select id="purchase" name="year-purchase">
+    <option value="select">select</option>
+
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+  </select><br><br>
+
+  <label for="km-driven">KM driven:</label><br><br>
+  <input type="number" id="driven" name="km-driven"><br><br>
+
+  <label for="description">Description:</label><br><br>
+  <textarea id="description" name="description"></textarea><br><br>
+
+  <label for="price">Price:</label><br><br>
+  <input type="number" id="price" name="price"><br><br>
+
+<input type="submit">
+
+
+
+</form>
+</body>
+</html>
+<script src="index.js"></script>

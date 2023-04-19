@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+
+nav {
+    background-color: plum;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px 0px;
+}
+
+nav>div {
+    /* border: 1px solid red; */
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav>div>a {
+    text-decoration: none;
+    text-shadow: plum;
+    color: black;
+}

@@ -1,0 +1,66 @@
+.mainContainer {
+    border: 2px solid green;
+    width: 100%;
+    margin: 40px auto;
+    height: 1200px;
+}
+.topsection {
+    border: 1px solid rgb(128, 0, 32);
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.fisrtdiv {
+    border: 1px solid rgb(128, 0, 115);
+    width: 100%;
+
+    height: 60vh;
+    margin: auto;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-image: url(https://media.istockphoto.com/id/1211994283/photo/portrait-of-a-confident-young-businessman.jpg?b=1&s=170667a&w=0&k=20&c=tc6qEY_rmQJVWBTpB75faKkGF4G3iHZ3J48tbhGeDKg=);
+}
+.fisrtdiv img {
+    width: 100%;
+}
+.fisrtdiv p {
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.seconddiv {
+    border: 1px solid rgb(11, 0, 128);
+    width: 100%;
+    margin: auto;
+    height: 60vh;
+    background-color: rgb(245,227,215);
+}
+.navbar{
+width: 90%;
+border: 1px solid yellow;
+margin: 10px auto;
+display: flex;
+font-size: 10px;
+justify-content: space-evenly;
+font-weight: 400;
+
+}
+.btn{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(245,227,215);
+    margin: 10px;
+}
+.details{
+    border: 1px solid yellow;
+    margin-left: 20px;
+}
+.details p{
+    font-size: 10px;
+    color: gray;
+}
