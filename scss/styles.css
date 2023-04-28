@@ -1,3 +1,7 @@
+* body {
+  overflow: display;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -384,7 +388,45 @@ footer p {
   margin-top: 300px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 450px) {
+@media all and (min-width: 300px) and (max-width: 767px) {
+  .main_header {
+    border: 0px solid green;
+    width: 80%;
+    margin: 1.5rem auto;
+    background-color: whitesmoke;
+  }
+  .main_header .nav_item {
+    border: 0px solid rgb(30, 0, 255);
+    width: 80%;
+    margin: auto;
+  }
+  .main_header .logo_img {
+    border: 2px solid yellow;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5rem;
+    left: 35rem;
+    width: 10.25rem;
+    height: 2.5rem;
+  }
+  .main_header .nav_link {
+    border: 5px solid blue;
+    margin-top: 2rem;
+    left: 249px;
+    display: none;
+    text-align: center;
+    opacity: 1;
+  }
+  .main_header .nav_link_item {
+    border: 2px solid cyan;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    font-family: normal normal 600 19px/26px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
   .logo_img {
     border: 2px solid yellow;
     margin: auto;
@@ -396,7 +438,7 @@ footer p {
     height: 2.5rem;
   }
   .top_section {
-    border: 2px solid green;
+    border: 0px solid green;
     width: 80%;
     margin: auto;
     margin-bottom: 1rem;
@@ -405,12 +447,12 @@ footer p {
     font-family: normal normal normal 18px/24px Nunito Sans;
   }
   .top_section .card_section {
-    border: 2px solid rgb(51, 255, 0);
+    border: 0px solid rgb(51, 255, 0);
     width: 100%;
     height: 32.3;
   }
   .top_section .card_section .card-details {
-    border: 1px solid rgba(76, 10, 229, 0.881);
+    border: 0px solid rgba(76, 10, 229, 0.881);
     width: 100%;
     height: auto;
     padding: 1.5rem;
@@ -447,7 +489,7 @@ footer p {
     padding-top: 1rem;
   }
   .top_section .top_section_image {
-    border: 2px solid black;
+    border: 0px solid black;
     width: 100%;
     margin-top: 1rem;
     height: 32rem;
@@ -470,7 +512,7 @@ footer p {
   }
   .mid_section {
     display: block;
-    border: 2px solid rgb(18, 191, 200);
+    border: 0px solid rgb(18, 191, 200);
     padding: 2rem;
     margin-top: 4rem;
   }
@@ -489,8 +531,8 @@ footer p {
     opacity: 1;
   }
   .section_div {
-    border: 2px solid pink;
-    width: 90%;
+    border: 0px solid pink;
+    width: 80%;
     margin: auto;
     height: auto;
     padding: 1rem;
@@ -573,7 +615,7 @@ footer p {
     border-radius: 42px;
     opacity: 1;
     margin-bottom: 15rem;
-    width: 80%;
+    width: 100%;
     background: #f8fafc 0% 0% no-repeat padding-box;
     box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
     z-index: 0;
@@ -598,10 +640,10 @@ footer p {
     z-index: 3;
   }
   .bottom_section .bottom_card_div .complete_card {
-    border: 2px solid teal;
+    border: 0px solid teal;
     box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
     border-radius: 30px;
-    width: 28%;
+    width: 100%;
     font-family: normal normal normal 13px/18px Nunito Sans;
     height: auto;
     padding: 1rem;
